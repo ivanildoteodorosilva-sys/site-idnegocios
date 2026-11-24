@@ -1,0 +1,22 @@
+:root{--mata:#123A31;--palha:#EEF0E9;--soja:#D4A017;--terra:#8C3A2B;--texto:#1d2622;--curva:#C8D2C2}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--palha);color:var(--texto);font:17px/1.65 Bahnschrift,"Segoe UI",system-ui,-apple-system,Roboto,sans-serif}
+header{background:var(--mata);color:#fff;padding:1.1rem 1.25rem}
+header a{color:#fff;text-decoration:none;font-weight:600;letter-spacing:.01em}
+header small{display:block;opacity:.75;font-size:.85rem}
+main{max-width:44rem;margin:0 auto;padding:2rem 1.25rem 3rem;background:#fff;min-height:70vh}
+h1{font-size:1.75rem;line-height:1.25;margin:.2rem 0 .4rem;color:var(--mata)}
+h2{font-size:1.15rem;margin:2.2rem 0 .5rem;color:var(--mata);border-top:1px solid var(--curva);padding-top:1.2rem}
+.meta{color:#5b665f;font-size:.92rem;margin:0 0 1.5rem}
+a{color:var(--terra)}
+a:focus-visible{outline:3px solid var(--soja);outline-offset:2px}
+table{border-collapse:collapse;width:100%;margin:.6rem 0 1rem;font-size:.95rem}
+th,td{border:1px solid var(--curva);padding:.5rem .6rem;text-align:left;vertical-align:top}
+th{background:var(--palha)}
+blockquote{margin:1rem 0;padding:.7rem 1rem;border-left:4px solid var(--soja);background:var(--palha)}
+.aviso{background:#f9eeda;border-left:4px solid var(--soja);padding:.7rem 1rem;margin:0 0 1.5rem}
+ul.produtos{list-style:none;padding:0}
+ul.produtos li{padding:.9rem 0;border-bottom:1px solid var(--curva)}
+footer{max-width:44rem;margin:0 auto;padding:1.2rem 1.25rem 2rem;font-size:.85rem;color:#5b665f}
+@media print{header,footer{display:none}main{max-width:none;padding:0}}
