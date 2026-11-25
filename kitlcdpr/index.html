@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kit LCDPR · Livro Caixa Digital do Produtor Rural</title>
+<meta name="description" content="Monte o Livro Caixa Digital do Produtor Rural e gere o arquivo da Receita no seu computador, sem internet. Edição AC 2026, entrega em 2027.">
+<link rel="stylesheet" href="../assets/estilo.css">
+<style>
+main.venda{max-width:none;padding:0;background:transparent}
+.faixa{max-width:64rem;margin:0 auto;padding:0 1.25rem}
+.hero{background:#fff;border-bottom:1px solid var(--curva)}
+.hero .faixa{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:2.2rem;align-items:center;padding-top:2.6rem;padding-bottom:2.6rem}
+.hero h1{font-size:2.3rem;line-height:1.12;margin:0 0 .8rem}
+.hero p{margin:0 0 1.2rem;color:#3d4a44}
+.hero img{width:100%;border-radius:8px;border:1px solid var(--curva);box-shadow:0 14px 30px -18px rgba(18,58,49,.45)}
+.acoes{display:flex;flex-wrap:wrap;gap:.7rem;align-items:center}
+.btn{display:inline-block;padding:.7rem 1.15rem;border-radius:7px;font-weight:600;text-decoration:none;font-size:1rem;border:2px solid var(--mata)}
+.btn.p{background:var(--mata);color:#fff}
+.btn.s{color:var(--mata);background:#fff}
+.btn:focus-visible{outline:3px solid var(--soja);outline-offset:2px}
+.edicao{font-size:.88rem;color:#5b665f;margin-top:.9rem}
+.prova{background:var(--mata);color:#fff}
+.prova .faixa{padding-top:1.6rem;padding-bottom:1.6rem;display:flex;gap:1.4rem;align-items:baseline;flex-wrap:wrap}
+.prova code{font-family:Consolas,"Cascadia Mono",monospace;background:rgba(255,255,255,.1);padding:.15rem .5rem;border-radius:4px;color:#f0d98a;font-size:.9rem;white-space:nowrap}
+.prova p{margin:0;flex:1;min-width:16rem}
+section.bloco{background:#fff;margin:1.4rem auto;max-width:64rem;padding:2rem 1.25rem}
+section.bloco h2{border-top:0;margin-top:0;padding-top:0;font-size:1.5rem}
+.duas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.2rem 2.4rem}
+.duas h3{margin:0 0 .2rem;font-size:1.05rem;color:var(--mata)}
+.duas p{margin:0;color:#3d4a44;font-size:.97rem}
+.lado{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:2rem;align-items:start}
+.lado img{width:100%;border-radius:8px;border:1px solid var(--curva)}
+.lado ul{padding-left:1.1rem;margin:.2rem 0 0}
+.lado li{margin-bottom:.5rem}
+.planos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-top:1rem}
+.plano{border:1px solid var(--curva);border-radius:8px;padding:1.2rem;display:flex;flex-direction:column}
+.plano.destaque{border:2px solid var(--mata)}
+.plano h3{margin:0;color:var(--mata);font-size:1.15rem}
+.plano .preco{font-size:2rem;font-weight:700;color:var(--texto);margin:.4rem 0 .1rem}
+.plano .quem{color:#5b665f;font-size:.92rem;margin:0 0 .8rem}
+.plano ul{padding-left:1.1rem;margin:0 0 1rem;font-size:.95rem;flex:1}
+.plano .btn{text-align:center}
+.beta{background:#f9eeda;border-left:4px solid var(--soja);padding:1.1rem 1.3rem;border-radius:0 8px 8px 0}
+.beta h2{margin-bottom:.3rem}
+details{border-bottom:1px solid var(--curva);padding:.75rem 0}
+summary{cursor:pointer;font-weight:600;color:var(--mata)}
+details p{margin:.5rem 0 0;color:#3d4a44}
+.celular{max-width:15rem;margin:0 auto;display:block;border-radius:14px;border:1px solid var(--curva)}
+@media (max-width:760px){
+  .hero .faixa,.lado,.duas,.planos{grid-template-columns:1fr}
+  .hero h1{font-size:1.8rem}
+  .prova code{white-space:normal}
+  section.bloco{margin:.8rem 0}
+}
+</style>
+</head>
+<body>
+<header><a href="../">ID. Realidade e Negócios</a><small>I. Teodoro da Silva Ltda · Água Boa–MT</small></header>
+<main class="venda">
+
+<div class="hero"><div class="faixa">
+  <div>
+    <h1>O Livro Caixa do produtor rural, do lançamento ao arquivo da Receita.</h1>
+    <p>O Kit LCDPR importa notas fiscais e extratos, classifica os lançamentos, aponta o que a fiscalização olharia primeiro e gera o TXT no leiaute 1.3. Tudo no seu computador, sem internet e sem mensalidade.</p>
+    <div class="acoes">
+      <a class="btn p" href="demonstracao/" target="_blank" rel="noopener">Testar a demonstração</a>
+      <a class="btn s" href="#planos">Ver os planos</a>
+    </div>
+    <p class="edicao">Edição AC 2026, para a entrega de 2027. A demonstração abre no navegador e tem tudo, menos a geração do arquivo.</p>
+  </div>
+  <img src="img/painel.webp" width="1200" height="750" alt="Painel do Kit LCDPR com o fluxo da safra mês a mês, o radar fiscal e a comparação com o resultado presumido">
+</div></div>
+
+<div class="prova"><div class="faixa">
+  <code>LCDPR aceito → Kit → LCDPR gerado: idêntico</code>
+  <p>Conferido com um Livro Caixa real, de 1.444 linhas, já transmitido e aceito pela Receita: o kit leu o arquivo e gerou outro igual, byte a byte.</p>
+</div></div>
+
+<section class="bloco">
+  <h2>O que ele faz por você</h2>
+  <div class="duas">
+    <div><h3>Lança como você fala</h3><p>"Vendi 500 sacas de soja para a cerealista por 65 mil dia 15/02" vira um lançamento completo, com participante, conta e documento.</p></div>
+    <div><h3>Importa o que você já tem</h3><p>Notas fiscais em XML ou ZIP (até uma pasta inteira), extrato OFX, planilha, folha do eSocial e o TXT do ano anterior ou de outro sistema.</p></div>
+    <div><h3>Classifica e aprende</h3><p>Cada lançamento recebe categoria com o motivo: NCM da nota, histórico do fornecedor, suas regras. Um clique classifica todos os lançamentos de um participante.</p></div>
+    <div><h3>Concilia nota e extrato</h3><p>Casa a nota fiscal com o pagamento no banco e fica com a data e a conta certas, como pede o regime de caixa.</p></div>
+    <div><h3>Aponta os riscos</h3><p>Saldo negativo, dinheiro em espécie alto, despesas concentradas em dezembro, parceria com cara de arrendamento: o radar mostra antes da Receita.</p></div>
+    <div><h3>Fecha a DIRPF</h3><p>Compara o resultado do Livro Caixa com o presumido de 20% e mostra qual é melhor para o produtor.</p></div>
+  </div>
+</section>
+
+<section class="bloco">
+  <h2>Feito também para o escritório contábil</h2>
+  <div class="lado">
+    <ul>
+      <li><b>Condomínio, parceria e casal:</b> lance cada despesa uma vez, pelo total. O kit gera o livro de cada CPF com a parte dele, a conta 999 para o que saiu da conta do outro e um novo registro quando o percentual muda no ano.</li>
+      <li><b>Folha de pagamento:</b> lê os eventos do eSocial Download e não deixa o PIX dos funcionários contar duas vezes.</li>
+      <li><b>Atividades de todo o Brasil:</b> grãos, gado de cria e engorda, leite, aves, suínos, café, cana, frutas, hortaliças, fumo, peixes, cacau e açaí, com as categorias de cada uma.</li>
+      <li><b>Vários livros de uma vez:</b> baixe os arquivos de todo o grupo em um ZIP, com a conferência de que a soma das partes bate com o total.</li>
+    </ul>
+    <img src="img/classificar.webp" width="1000" height="753" alt="Tela de classificação por participante do Kit LCDPR">
+  </div>
+</section>
+
+<section class="bloco">
+  <h2>Os dados ficam com você</h2>
+  <div class="lado">
+    <div>
+      <p>O kit é um arquivo que abre no Chrome ou no Edge, no Windows, no Mac ou no Linux. Não precisa instalar e não usa internet: nenhum dado do produtor sai do computador.</p>
+      <p>O projeto é salvo num arquivo protegido por senha (criptografia AES-256), com salvamento automático e versões anteriores para voltar atrás.</p>
+    </div>
+    <img class="celular" src="img/celular.webp" width="390" height="800" alt="Kit LCDPR aberto na tela de um celular">
+  </div>
+</section>
+
+<section class="bloco" id="planos">
+  <h2>Planos</h2>
+  <p class="meta">Pagamento único por edição anual. Edição AC 2026, para a entrega de 2027.</p>
+  <div class="planos">
+    <div class="plano">
+      <h3>Produtor</h3><div class="preco">R$ 197</div><p class="quem">Para o produtor que faz o próprio livro.</p>
+      <ul><li>1 CPF</li><li>Todas as funções</li><li>Atualizações da edição</li></ul>
+      <a class="btn s" href="mailto:kitlcdpr@idnegocios.com.br?subject=Quero%20o%20Kit%20LCDPR%20-%20plano%20Produtor" data-plano="produtor">Comprar</a>
+    </div>
+    <div class="plano destaque">
+      <h3>Contador 10</h3><div class="preco">R$ 497</div><p class="quem">Para escritórios com carteira rural.</p>
+      <ul><li>Até 10 CPFs</li><li>Cópia identificada com o nome do escritório</li><li>Condomínio, parceria e folha</li></ul>
+      <a class="btn p" href="mailto:kitlcdpr@idnegocios.com.br?subject=Quero%20o%20Kit%20LCDPR%20-%20plano%20Contador%2010" data-plano="contador10">Comprar</a>
+    </div>
+    <div class="plano">
+      <h3>Contador Ilimitado</h3><div class="preco">R$ 997</div><p class="quem">Para escritórios com muitos produtores.</p>
+      <ul><li>CPFs ilimitados</li><li>Cópia identificada com o nome do escritório</li><li>Condomínio, parceria e folha</li></ul>
+      <a class="btn s" href="mailto:kitlcdpr@idnegocios.com.br?subject=Quero%20o%20Kit%20LCDPR%20-%20plano%20Contador%20Ilimitado" data-plano="ilimitado">Comprar</a>
+    </div>
+  </div>
+  <p class="meta" style="margin-top:1rem">Ao comprar, você concorda com os <a href="termos/">Termos de Uso e Licença</a>.</p>
+</section>
+
+<section class="bloco">
+  <div class="beta">
+    <h2>Beta para contadores</h2>
+    <p>Até 28/02/2027, escritórios convidados usam a versão completa de graça, com os seus clientes reais, e nos contam o que acharam. Quer participar? Escreva para <a href="mailto:kitlcdpr@idnegocios.com.br?subject=Quero%20participar%20do%20beta%20do%20Kit%20LCDPR">kitlcdpr@idnegocios.com.br</a> com o nome do escritório e a cidade.</p>
+  </div>
+</section>
+
+<section class="bloco">
+  <h2>Perguntas frequentes</h2>
+  <details><summary>Quem é obrigado a entregar o LCDPR?</summary><p>O produtor pessoa física com receita bruta da atividade rural acima de R$ 4,8 milhões no ano. Em condomínio ou parceria, o limite vale para a parte de cada um. Abaixo disso, a entrega é facultativa, e o livro serve para apurar o resultado na DIRPF.</p></details>
+  <details><summary>Preciso instalar alguma coisa?</summary><p>Não. É um arquivo que abre com dois cliques no Chrome ou no Edge, no Windows, no Mac ou no Linux.</p></details>
+  <details><summary>Funciona sem internet?</summary><p>Sim. O kit não usa internet: os dados ficam no seu computador, num arquivo protegido por senha.</p></details>
+  <details><summary>O arquivo gerado é aceito pela Receita?</summary><p>O kit segue o leiaute 1.3 do LCDPR e foi conferido com um arquivo real já aceito: o resultado saiu idêntico. Antes de gerar, ele confere o livro e aponta o que precisa de correção. A transmissão é feita por você, no e-CAC.</p></details>
+  <details><summary>Posso testar antes de comprar?</summary><p>Sim: a <a href="demonstracao/" target="_blank" rel="noopener">demonstração</a> tem todas as funções, menos a geração do arquivo. Os projetos que você salvar nela abrem na versão completa.</p></details>
+  <details><summary>Já trago os dados de outro sistema?</summary><p>Sim. O kit importa o TXT do LCDPR gerado por outro programa ou do ano anterior, além de notas, extratos e planilhas.</p></details>
+  <details><summary>E se a Receita mudar o leiaute?</summary><p>Cada edição anual acompanha as regras do seu ano-calendário. Mudanças publicadas durante a edição são incorporadas nas atualizações.</p></details>
+  <details><summary>Como recebo o suporte?</summary><p>Por e-mail, em <a href="mailto:kitlcdpr@idnegocios.com.br">kitlcdpr@idnegocios.com.br</a>. Nunca pedimos o seu arquivo nem a sua senha.</p></details>
+</section>
+
+</main>
+<footer><a href="termos/">Termos de Uso e Licença</a> · <a href="../privacidade/">Política de Privacidade</a> · <a href="mailto:kitlcdpr@idnegocios.com.br">kitlcdpr@idnegocios.com.br</a><br>I. TEODORO DA SILVA LTDA · CNPJ 65.418.732/0001-41 · Av. Araguaia, 49, Sala 01, Centro, Água Boa–MT, CEP 78.635-000</footer>
+</body>
+</html>
