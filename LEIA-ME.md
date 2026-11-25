@@ -18,5 +18,5 @@ O domínio é ligado em Settings › Pages › Custom domain (o GitHub cria o ar
 Nova versão dos termos: copie a vigente para `kitlcdpr/termos/vN/`, depois edite a vigente.
 Não coloque aqui o app nem código-fonte: este repositório é público.
 
-Botões "Comprar" da página do Kit: hoje abrem um e-mail para kitlcdpr@. Quando os produtos existirem na Hotmart, troque o href de cada botão (marcados com data-plano="produtor", "contador10" e "ilimitado") pelo link de pagamento.
+Botões "Comprar" da página do Kit apontam para a Hotmart (produto A108653465S): produtor off=lgxh1lb5 (R$ 197), contador10 off=3nmbnfzt (R$ 497), ilimitado off=k6dl4dpp (R$ 997). Marcados com data-plano no HTML.
 Nova demonstração: gere com `python build.py --demo` e substitua kitlcdpr/demonstracao/index.html.
